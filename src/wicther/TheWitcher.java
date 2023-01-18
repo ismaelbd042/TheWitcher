@@ -34,4 +34,13 @@ public class TheWitcher {
 		this.hasSoul = hasSoul;
 	}
 
+	public boolean isDeath() {
+		if (health == 0) {
+			return true;
+		} else if (!hasSoul) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
